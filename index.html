@@ -12,9 +12,49 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      background-color: #F4D04E;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-inside{
+      background-image: 
+    linear-gradient(to right, #6b6b6b21 45px, transparent 45px);
+  background-size: 82px 82px; /* Match Figma grid spacing */
+  background-position: center;
+      width: 90vw;
+      height: 100vh;
+    }
+
+    @media screen and (max-width: 768px) {
+    
+      .grid-inside {
+    padding: 0 20px; /* Add padding on both sides */
+    position: relative;
+    
+    background-image: linear-gradient(to right, #6b6b6b21 30px, transparent 30px);
+    
+    background-size: calc((100% - 40px) / 4) 100%; /* Divide available space by 4 */
+    background-position: left 20px top 0; /* Ensure lines start after padding */
+    width: 85%;
+    height: 100vh; /* Full screen height */
+    }
+    
+
+   
+}
+    
   </style>
 </head>
 <body>
+
+  <div class="grid-inside">
+
+  </div>
 
   
 </body>
