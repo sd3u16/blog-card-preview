@@ -96,6 +96,20 @@
       gap: 0.6rem;
     }
 
+    
+
+    .card-box__h2:hover, .card-box__h2:focus{
+      color: #F4D04E;
+      cursor: pointer;
+    }
+
+
+    .card-box__h2:active{
+      color: red !important; /* Overrides hover/focus when clicked */
+  color: white;
+    }
+
+
     @media screen and (max-width: 768px) {
     
       .grid-inside {
@@ -132,16 +146,16 @@
 
       <div class="card-box">
         <div id="card-box_header">
-            <div class="card-box__image"><img src="./assets/images/illustration-article.svg" alt=""></div>
+            <div class="card-box__image"><img src="../assets/images/illustration-article.svg" alt=""></div>
         </div>
         <div id="card-box__main">
           <button class="card-box__main_btn">Learning</button>
           <p>Published <time datetime="2023-12-21">21 Dec 2023</time></p>
-          <h2>HTML & CSS Foundations</h2>
+          <h2 class="card-box__h2">HTML & CSS Foundations</h2>
           <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
         </div>
         <div class="footer">
-          <img class="footer__img" src="./assets/images/image-avatar.webp" alt="">
+          <img class="footer__img" src="../assets/images/image-avatar.webp" alt="">
           <p class="footer__p">Greg Hooper</p>
         </div>
       </div>
