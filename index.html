@@ -10,8 +10,19 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
+    *, *::before, *::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    
 
     body{
       background-color: #F4D04E;
@@ -19,6 +30,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: 'Figtree', sans-serif;
+    
+    }
+
+    .card-box__main_btn{
+      margin-right: 9.4rem;
+      background-color: #F4D04E;
+      border: 0;
+      width: fit-content;
+      padding: 0.5rem 1.2rem;
+      border-radius: 5px;
+      font-weight: 900;
+    }
+
+    .footer__img{
+      width: 30px;
     }
 
     .card-box{
@@ -28,6 +55,16 @@
       flex-wrap: nowrap;
       width: 384px;
       border-radius: 20px;
+      justify-content: center;
+      align-items: center;
+      padding: 1.2rem;
+      gap: 1.5rem;
+
+    }
+
+    .card-box__image img{
+      max-width: 100%;
+      border-radius: 10px;
     }
 
     .grid-inside{
@@ -43,6 +80,20 @@
       display: flex;
       flex-direction: column;
      
+    }
+
+    .footer{
+      display: flex;
+      align-self: flex-start;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    #card-box__main{
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 0.6rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -62,6 +113,10 @@
     width: 323.09px;
     height: 100vh; /* Full screen height */
     background-position: left top;
+  }
+
+  .card-box{
+    width: 300px;
   }
     
 
