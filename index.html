@@ -21,6 +21,15 @@
       align-items: center;
     }
 
+    .card-box{
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 384px;
+      border-radius: 20px;
+    }
+
     .grid-inside{
       background-image: 
     linear-gradient(to right, #6b6b6b21 45px, transparent 45px);
@@ -28,21 +37,32 @@
   background-position: center;
       width: 90vw;
       height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+     
     }
 
     @media screen and (max-width: 768px) {
     
       .grid-inside {
-    padding: 0 20px; /* Add padding on both sides */
+   /* Add padding on both sides */
     position: relative;
+   
     
-    background-image: linear-gradient(to right, #6b6b6b21 30px, transparent 30px);
+    background-image: 
+      linear-gradient(to right, #6b6b6b21 46.16px, transparent 46.16px);
     
-    background-size: calc((100% - 40px) / 4) 100%; /* Divide available space by 4 */
-    background-position: left 20px top 0; /* Ensure lines start after padding */
-    width: 85%;
+    
+
+   
+    background-size: 92.32px 100%;;
+    width: 323.09px;
     height: 100vh; /* Full screen height */
-    }
+    background-position: left top;
+  }
     
 
    
@@ -54,6 +74,22 @@
 
   <div class="grid-inside">
 
+
+      <div class="card-box">
+        <div id="card-box_header">
+            <div class="card-box__image"><img src="./assets/images/illustration-article.svg" alt=""></div>
+        </div>
+        <div id="card-box__main">
+          <button class="card-box__main_btn">Learning</button>
+          <p>Published <time datetime="2023-12-21">21 Dec 2023</time></p>
+          <h2>HTML & CSS Foundations</h2>
+          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </div>
+        <div class="footer">
+          <img class="footer__img" src="./assets/images/image-avatar.webp" alt="">
+          <p class="footer__p">Greg Hooper</p>
+        </div>
+      </div>
   </div>
 
   
